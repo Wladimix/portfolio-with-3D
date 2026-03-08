@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 const Scene = () => {
 	const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
+	const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 	const hdriUrl = "models/royal_esplanade_2k.hdr";
 
 	return (
@@ -17,7 +18,7 @@ const Scene = () => {
 
 			<Environment files={hdriUrl} intensity={1.0} background={false} />
 
-			<AnimatedGroup>
+			<AnimatedGroup isMobile={isMobile}>
 				<Photo />
 				<Glass />
 			</AnimatedGroup>
