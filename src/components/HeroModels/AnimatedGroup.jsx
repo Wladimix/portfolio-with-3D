@@ -2,7 +2,6 @@ import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
 const AnimatedGroup = ({ children }) => {
-	console.log("AnimatedGroup");
 	const groupRef = useRef();
 	const timeRef = useRef(0);
 

@@ -2,7 +2,6 @@ import { useLayoutEffect, useRef } from "react";
 import * as THREE from "three";
 
 const Glass = () => {
-	console.log("Glass");
 	const meshRef = useRef(null);
 
 	useLayoutEffect(() => {

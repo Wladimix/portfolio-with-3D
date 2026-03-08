@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import * as THREE from "three";
 
 const Photo = () => {
-	console.log("Photo");
 	const [texture, setTexture] = useState(null);
 	const [aspectRatio, setAspectRatio] = useState(1);
 
 	useEffect(() => {
 		const loader = new THREE.TextureLoader();
+		let loadedTexture = null;
+
 		loader.load("/images/hero.png", tex => {
 			tex.colorSpace = THREE.SRGBColorSpace;
+			loadedTexture = tex;
 			setTexture(tex);
 			if (tex.image) {
 				setAspectRatio(tex.image.width / tex.image.height);
@@ -17,20 +19,21 @@ const Photo = () => {
 		});
 
 		return () => {
-			if (texture) {
-				texture.dispose();
+			if (loadedTexture) {
+				loadedTexture.dispose();
 			}
 		};
-	}, [texture]);
+	}, []);
 
-	const photoScale = 1.2;
-	const safeMargin = 1.0;
-	const finalScale = photoScale * safeMargin;
+	const scale = useMemo(() => {
+		const photoScale = 1.2;
+		const safeMargin = 1.0;
+		const finalScale = photoScale * safeMargin;
 
-	const scale =
-		aspectRatio > 1 ?
-			[finalScale, finalScale / aspectRatio, 1]
-		:	[finalScale * aspectRatio, finalScale, 1];
+		return aspectRatio > 1 ?
+				[finalScale, finalScale / aspectRatio, 1]
+			:	[finalScale * aspectRatio, finalScale, 1];
+	}, [aspectRatio]);
 
 	if (!texture) return null;
 

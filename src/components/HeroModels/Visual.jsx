@@ -2,7 +2,6 @@ import { Canvas } from "@react-three/fiber";
 import Scene from "./Scene";
 
 const HeroVisual = () => {
-	console.log("HeroVisual");
 	return (
 		<Canvas
 			camera={{ position: [0, 0, 7], fov: 45, near: 0.1, far: 100 }}
