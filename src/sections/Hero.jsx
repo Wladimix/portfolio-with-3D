@@ -53,7 +53,15 @@ const Hero = () => {
 									</span>
 								</span>
 							</h1>
-							<h1>JavaScript/Typescript</h1>
+							<h1>
+								<span className="text-amber-300">
+									JavaScript
+								</span>
+								/
+								<span className="text-blue-500">
+									Typescript
+								</span>
+							</h1>
 							<h1>junior/junior+</h1>
 						</div>
 
