@@ -9,7 +9,7 @@ const Photo = () => {
 		const loader = new THREE.TextureLoader();
 		let loadedTexture = null;
 
-		loader.load("/images/hero.png", tex => {
+		loader.load("images/hero.png", tex => {
 			tex.colorSpace = THREE.SRGBColorSpace;
 			loadedTexture = tex;
 			setTexture(tex);

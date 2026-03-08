@@ -4,7 +4,7 @@ import Glass from "./Glass";
 import AnimatedGroup from "./AnimatedGroup";
 
 const Scene = () => {
-	const hdriUrl = "/models/royal_esplanade_2k.hdr";
+	const hdriUrl = "models/royal_esplanade_2k.hdr";
 
 	return (
 		<>
