@@ -17,11 +17,7 @@ const AnimatedGroup = ({ children, isMobile }) => {
 	});
 
 	return (
-		<group
-			ref={groupRef}
-			scale={isMobile ? 0.9 : 1.4}
-			position={[0, isMobile ? -0.9 : 0, 0]}
-		>
+		<group ref={groupRef} scale={isMobile ? 0.9 : 1.4}>
 			{children}
 		</group>
 	);
