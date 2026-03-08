@@ -1,7 +1,7 @@
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
-const AnimatedGroup = ({ children, isMobail }) => {
+const AnimatedGroup = ({ children, isMobile }) => {
 	const groupRef = useRef();
 	const timeRef = useRef(0);
 
@@ -17,7 +17,7 @@ const AnimatedGroup = ({ children, isMobail }) => {
 	});
 
 	return (
-		<group ref={groupRef} scale={isMobail ? 0.7 : 1}>
+		<group ref={groupRef} scale={isMobile ? 0.9 : 1.4}>
 			{children}
 		</group>
 	);
