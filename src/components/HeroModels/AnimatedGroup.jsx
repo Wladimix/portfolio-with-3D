@@ -9,7 +9,8 @@ const AnimatedGroup = ({ children, isMobile }) => {
 		if (isMobile) {
 			timeRef.current += delta * 0.5;
 			groupRef.current.rotation.y = Math.sin(timeRef.current * 0.2) * 0.1;
-			groupRef.current.rotation.x = Math.sin(timeRef.current * 0.15) * 0.05;
+			groupRef.current.rotation.x =
+				Math.sin(timeRef.current * 0.15) * 0.05;
 		} else {
 			timeRef.current += delta;
 			groupRef.current.rotation.y += delta * 0.5;
@@ -20,7 +21,11 @@ const AnimatedGroup = ({ children, isMobile }) => {
 	});
 
 	return (
-		<group ref={groupRef} scale={isMobile ? 0.9 : 1.4}>
+		<group
+			ref={groupRef}
+			scale={isMobile ? 0.9 : 1.4}
+			position={[0, isMobile ? -1 : 0, 0]}
+		>
 			{children}
 		</group>
 	);

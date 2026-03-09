@@ -26,7 +26,7 @@ const Photo = ({ isMobile }) => {
 	}, []);
 
 	const scale = useMemo(() => {
-		const photoScale = isMobile ? 3 : 1.2;
+		const photoScale = isMobile ? 4 : 1.2;
 		const safeMargin = 1.0;
 		const finalScale = photoScale * safeMargin;
 
