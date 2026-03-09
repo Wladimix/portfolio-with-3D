@@ -1,5 +1,5 @@
-import { companies } from "../constants";
 import TitleHeader from "../components/TitleHeader";
+import { companies } from "../constants";
 
 const CompaniesSection = () => {
 	return (

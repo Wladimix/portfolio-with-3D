@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { navLinks } from "../constants";
 
 const NavBar = () => {

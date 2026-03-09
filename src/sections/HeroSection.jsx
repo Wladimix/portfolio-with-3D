@@ -1,8 +1,9 @@
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 import Button from "../components/Button";
 import HeroModel from "../components/HeroModel/HeroModel";
 import { words } from "../constants";
-import gsap from "gsap";
 
 const Hero = () => {
 	useGSAP(() => {

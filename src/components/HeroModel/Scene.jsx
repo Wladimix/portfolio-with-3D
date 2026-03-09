@@ -1,8 +1,10 @@
 import { OrbitControls, Environment } from "@react-three/drei";
-import Photo from "./Photo";
-import Glass from "./Glass";
-import AnimatedGroup from "./AnimatedGroup";
 import { useMediaQuery } from "react-responsive";
+
+import AnimatedGroup from "./AnimatedGroup";
+import Glass from "./Glass";
+import Photo from "./Photo";
+
 
 const Scene = () => {
 	const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });

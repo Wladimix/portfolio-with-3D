@@ -1,6 +1,6 @@
+import GlowCard from "../components/GlowCard";
 import TitleHeader from "../components/TitleHeader";
 import { skills } from "../constants";
-import GlowCard from "../components/GlowCard";
 
 const SkillsSection = () => {
 	return (
