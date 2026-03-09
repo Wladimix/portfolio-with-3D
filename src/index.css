@@ -297,3 +297,9 @@ section {
 .card:hover::before {
 	opacity: 1;
 }
+
+@media (max-width: 768px) {
+	.card::before {
+		display: none;
+	}
+}
