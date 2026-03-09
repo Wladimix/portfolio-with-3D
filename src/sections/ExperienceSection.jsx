@@ -27,24 +27,9 @@ const ExperienceSection = () => {
 				});
 			});
 
-			gsap.to(".timeline", {
-				transformOrigin: "bottom bottom",
-				ease: "power1.inOut",
-				scrollTrigger: {
-					trigger: ".timeline",
-					start: "top center",
-					end: "70% center",
-					onUpdate: self => {
-						gsap.to(".timeline", {
-							scaleY: 1 - self.progress,
-						});
-					},
-				},
-			});
-
 			gsap.utils.toArray(".expText").forEach(text => {
 				gsap.from(text, {
-					xPercent: 0,
+					x: 50,
 					opacity: 0,
 					duration: 1,
 					ease: "power2.inOut",
@@ -79,18 +64,15 @@ const ExperienceSection = () => {
 
 								<div className="xl:w-4/6">
 									<div className="flex items-start">
-										<div className="timeline-wrapper">
-											<div className="timeline" />
-											<div className="gradient-line w-1 h-full"></div>
-										</div>
-
-										<div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-											<div className="timeline-logo">
-												<img
-													src={card.logoPath}
-													alt="logo"
-												/>
-											</div>
+										<div className="expText flex xl:gap-20 md:gap-10 gap-5 relative border-l-2 border-gradient-line pl-10">
+											{isMobile || (
+												<div className="timeline-logo absolute -left-10 -top-10">
+													<img
+														src={card.logoPath}
+														alt="logo"
+													/>
+												</div>
+											)}
 
 											<div>
 												<h1 className="font-semibold text-3xl mb-2">
