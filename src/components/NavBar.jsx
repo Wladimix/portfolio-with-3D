@@ -36,7 +36,7 @@ const NavBar = () => {
 					</ul>
 				</nav>
 
-				<a href="#" className="resume-btn group">
+				<a href="#" className="resume-btn group" target="blank">
 					<div className="inner">
 						<span>Моё резюме</span>
 					</div>
