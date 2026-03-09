@@ -15,8 +15,8 @@ const App = () => {
 			<CompaniesSection />
 			<ExperienceSection />
 			<SkillsSection />
-			<LogoSection />
 			<ElectricBorderSection />
+			<LogoSection />
 			<Footer />
 		</>
 	);
