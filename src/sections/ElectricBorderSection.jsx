@@ -1,4 +1,4 @@
-import ElectricBorderCard from "./ElectricBorderCard";
+import ElectricBorderCard from "../components/ElectricBorderCard";
 
 const ElectricBorderSection = () => {
 	return (
