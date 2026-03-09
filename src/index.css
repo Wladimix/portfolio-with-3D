@@ -134,6 +134,7 @@ section {
 
 	.card-border {
 		@apply border border-black-50 bg-black-100;
+		contain: layout paint;
 	}
 
 	.timeline-logo {
@@ -157,12 +158,14 @@ section {
 	display: inline-block;
 	flex-direction: column;
 	transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+	will-change: transform;
 }
 
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	animation: wordSlider 5s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+	will-change: transform;
 }
 
 @keyframes wordSlider {
@@ -223,6 +226,13 @@ section {
 	position: absolute;
 	overflow: hidden;
 	animation: marquee 40s linear infinite alternate;
+	will-change: left;
+}
+
+@media (max-width: 768px) {
+	.marquee-box {
+		animation-duration: 60s;
+	}
 }
 
 .marquee-item {
