@@ -1,7 +1,8 @@
-const TitleHeader = ({ title, className }) => {
+const TitleHeader = ({ title, className, id }) => {
 	return (
 		<div
-			className={`${className} font-semibold md:text-5xl text-3xl text-center`}
+			id={id}
+			className={`${className} font-semibold md:text-5xl text-3xl text-center scroll-mt-24`}
 		>
 			{title}
 		</div>
