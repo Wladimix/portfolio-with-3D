@@ -3,7 +3,7 @@ import { companies } from "../constants";
 
 const CompaniesSection = () => {
 	return (
-		<div className="w-full padding-x-lg">
+		<div className="w-full padding-x-lg mt-20 md:mt-0">
 			<TitleHeader id="companies" title="Компании" className="mb-20" />
 
 			<div className="mx-auto grid-3-cols">
