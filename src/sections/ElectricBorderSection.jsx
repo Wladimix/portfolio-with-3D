@@ -2,8 +2,11 @@ import ElectricBorderCard from "../components/ElectricBorderCard";
 
 const ElectricBorderSection = () => {
 	return (
-		<section id="about" className="electric-border-section">
-			<svg className="svg-container">
+		<section
+			id="about"
+			className="relative flex flex-col items-center justify-center min-h-dvh py-12.5 md:py-25 px-5 md:px-20"
+		>
+			<svg className="absolute">
 				<defs>
 					<filter
 						id="turbulent-displace"
