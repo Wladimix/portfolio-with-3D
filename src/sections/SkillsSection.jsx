@@ -10,7 +10,11 @@ const SkillsSection = () => {
 
 				<div className="lg:columns-3 md:columns-2 columns-1 mt-16">
 					{skills.map(skill => (
-						<GlowCard card={skill} stars={skill.stars}>
+						<GlowCard
+							key={skill.name}
+							card={skill}
+							stars={skill.stars}
+						>
 							<div className="flex items-center gap-3">
 								<div className="md:w-10 w-7">
 									<img src={skill.imgPath} alt={skill.name} />
