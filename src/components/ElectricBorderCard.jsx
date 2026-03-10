@@ -44,32 +44,13 @@ const ElectricBorderCard = () => {
 
 						<div className="relative z-10 flex flex-col pointer-events-none">
 							<div className="flex flex-col px-7 py-6 pb-3 h-full md:px-24 md:py-14 md:pb-6">
-								<a
-									href="#"
-									className="relative inline-block w-fit h-fit mb-7 px-8 py-4 rounded-[14px] uppercase font-bold text-[clamp(22px,2vw,40px)] text-[rgba(255,255,255,0.8)] cursor-pointer no-underline transition-background-300 ease hover:text-[rgba(255,255,255,0.8)]"
-									style={{
-										background:
-											"radial-gradient(47.2% 50% at 50.39% 88.37%, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 100%), rgba(255,255,255,0.04)",
-									}}
-									target="blank"
-									onMouseEnter={e => {
-										e.currentTarget.style.background =
-											"radial-gradient(47.2% 50% at 50.39% 88.37%, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 100%), rgba(255,255,255,0.08)";
-									}}
-									onMouseLeave={e => {
-										e.currentTarget.style.background =
-											"radial-gradient(47.2% 50% at 50.39% 88.37%, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 100%), rgba(255,255,255,0.04)";
-									}}
-								>
-									Резюме
-								</a>
-								<p className="mt-auto text-[clamp(26px,5vw,72px)] md:text-[clamp(26px,5vw,72px)] font-medium leading-[1.3]">
+								<p className="text-[clamp(26px,5vw,72px)] md:text-[clamp(26px,5vw,72px)] font-medium leading-[1.3]">
 									Обо мне
 								</p>
 							</div>
 
 							<hr
-								className="mt-auto border-none h-px bg-current opacity-10"
+								className="border-none h-px bg-current opacity-10"
 								style={{
 									maskImage:
 										"linear-gradient(to right, transparent, black, transparent)",
