@@ -223,6 +223,15 @@ export const skills = [
 		color: "#3178C6",
 		level: "middle",
 	},
+	{
+		stars: 3,
+		description:
+			"Понимаю компонентный подход построения React приложения. Умею применять некоторые паттерны (Builder, HOC, Component Composition) для создания гибких и переиспользуемых компонентов. Владею основными хуками (useState, useEffect, useReducer, useCallback, useMemo, useRef) и понимаю их внутреннее устройство и влияние на цикл перерендера. Умею управлять глобальным состоянием, выбирая подходящие инструменты.",
+		name: "React",
+		imgPath: "images/react.svg",
+		color: "#00D8FF",
+		level: "middle",
+	},
 ];
 
 export const logoIconsList = [

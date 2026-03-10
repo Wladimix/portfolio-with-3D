@@ -21,7 +21,8 @@ const SkillsSection = () => {
 								</div>
 								<div>
 									<h1
-										className={`font-bold text-2xl text-[${skill.color}]`}
+										className="font-bold text-2xl"
+										style={{ color: skill.color }}
 									>
 										{skill.name}
 									</h1>
